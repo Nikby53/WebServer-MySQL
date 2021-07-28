@@ -39,7 +39,7 @@ func CreateHandler(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w,r, "templates/create.html")
 	}
 }
-
+// функция запроса из БД
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 	rows, err := database.Query("select * from productdb.Products")
