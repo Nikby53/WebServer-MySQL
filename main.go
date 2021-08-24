@@ -65,7 +65,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	db, err := sql.Open("mysql", "root:12325066Qq@/productdb")
+	db, err := sql.Open("mysql", "root:1232506@/productdb")
 
 	if err != nil {
 		log.Println(err)
